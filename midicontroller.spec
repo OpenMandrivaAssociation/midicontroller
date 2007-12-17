@@ -11,7 +11,6 @@ Source:		%{name}-%{version}.tar.bz2
 URL:		http://sourceforge.net/projects/midicontrol/
 License:	GPL
 Group:		Sound
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	pkgconfig libalsa-devel libglademm2.4-devel
 
 %description
