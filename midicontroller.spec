@@ -32,11 +32,6 @@ rm -rf $RPM_BUILD_ROOT
 %makeinstall PREFIX=$RPM_BUILD_ROOT/%_prefix
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="sound_section.png" needs="x11" title="MIDI Controller" longtitle="MIDI CC Sliders" section="Multimedia/Sound"\
-xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -64,7 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %doc README
 %{_bindir}/%name
-%{_menudir}/%name
 %{_datadir}/%name
 %{_datadir}/applications/mandriva-%{name}.desktop
 
