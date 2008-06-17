@@ -1,6 +1,6 @@
 %define name	midicontroller
 %define version	041011
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name: 	 	%{name}
 Summary:	Graphical sliders to send MIDI control commands	
@@ -45,6 +45,7 @@ Type=Application
 Categories=X-MandrivaLinux-Multimedia-Sound;AudioVideo;Midi;
 Encoding=UTF-8
 EOF
+rm -fr RPM_BUILD_ROOT%_defaultdocdir/%name-%version
 
 %clean
 rm -rf $RPM_BUILD_ROOT
