@@ -45,7 +45,7 @@ Type=Application
 Categories=X-MandrivaLinux-Multimedia-Sound;AudioVideo;Midi;
 Encoding=UTF-8
 EOF
-rm -fr RPM_BUILD_ROOT%_defaultdocdir/%name-%version
+rm -fr $RPM_BUILD_ROOT%_defaultdocdir/%name-%version
 
 %clean
 rm -rf $RPM_BUILD_ROOT
