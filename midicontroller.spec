@@ -1,6 +1,6 @@
 %define name	midicontroller
 %define version	041011
-%define release %mkrel 5
+%define release %mkrel 6
 
 Name: 	 	%{name}
 Summary:	Graphical sliders to send MIDI control commands	
